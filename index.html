@@ -1,1 +1,40 @@
-<h1>Hello!</h1>
+<div class="hartreeEnquiryForm" style="width: 100%;">
+    <div class="alert alert-info">
+        <p>The data you input into this form will only be used for the purposes of answering your enquiry,
+        gaining access to the Hartree Centre’s services or to request feedback on a service you received at the Hartree Centre.
+        The data will not be stored for longer than necessary, used for different purposes, or shared with unaffiliated third-parties.
+        By submitting this form, you consent to your data being used for these specified purposes, and you understand that this form is under regulation by
+        <a class="alert-link" target="_blank" href="https://stfc.ukri.org/about-us/how-we-are-governed/policies-standards/information-charter/">STFC’s Information Charter.</a></p>
+    </div>
+    <form action="https://formspree.io/dylan.chambers@stfc.ac.uk" method="POST">
+    <div class="hartreeFormName" style="margin-bottom: 10px;">
+        <div class="row">
+            <p class="col-md-10">Full Name:</p>
+            <div class="col-md-2" style="text-align:right;display: none;" id="hartreeFormNameRequired"><span class="label label-danger">Required</span></div>
+        </div>
+        <input type="text" class="form-control hartreeFormInput" name="formName" style="width: 100%;"/>
+    </div>
+    <div class="hartreeFormEmail" style="margin-bottom: 10px;">
+        <div class="row">
+            <p class="col-md-10">Email Address:</p>
+            <div class="col-md-2" style="text-align:right;display: none;" id="hartreeFormEmailRequired"><span class="label label-danger">Required</span></div>
+        </div>
+        <input type="email" class="form-control hartreeFormInput" name="formEmail" style="width: 100%;"/>
+    </div>
+    <div class="hartreeFormPhone" style="margin-bottom: 10px;">
+        <div class="row">
+            <p class="col-md-10">Phone Number:</p>
+            <div class="col-md-2" style="text-align:right;"><span class="label label-info">Optional</span></div>
+        </div>
+        <input type="tel" class="form-control hartreeFormInput" name="formPhone" style="width: 100%;"/>
+    </div>
+    <div class="hartreeFormEnquiry" style="margin-bottom: 10px;">
+        <div class="row">
+            <p class="col-md-10">Your Enquiry:</p>
+            <div class="col-md-2" style="text-align:right;display: none;" id="hartreeFormEnquiryRequired"><span class="label label-danger">Required</span></div>
+        </div>
+        <textarea class="form-control hartreeFormInput" name="formEnquiry" maxlength="255" placeholder="Please enter a concise description of how we can help you, up to 255 characters." style="width: 100%;max-width: 100%;min-width: 100%;height: 100px;max-height: 100px;min-height: 100px;"></textarea> 
+    </div>
+    <input type="submit" class="btn btn-primary" style="width: 100%;"></input>
+    </form>
+</div>
